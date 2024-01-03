@@ -38,6 +38,6 @@ import io.cucumber.junit.CucumberOptions;
  * required to run the test.
  */
 
-public class MyRunner {
+public class TestRunner {
 
 }

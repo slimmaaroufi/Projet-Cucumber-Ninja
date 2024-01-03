@@ -18,9 +18,6 @@ import utils.ConfigReader;
 public class MyHooks {
 
 	WebDriver driver;
-	//private ConfigReader configReader;
-	//private DriverFactory driverFactory;
-	
 	@Before
 	public void setup() {
 		

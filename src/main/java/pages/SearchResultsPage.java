@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utils.CommonUtils;
 import utils.ElementUtils;
 
 public class SearchResultsPage {
@@ -24,12 +25,12 @@ public class SearchResultsPage {
 	private WebElement messageText;
 	
 	public boolean displayStatusOfValidProduct() {
-		return elementUtils.displayStatusOfElement(validHPProduct, 30);
+		return elementUtils.displayStatusOfElement(validHPProduct, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
 		//return validHPProduct.isDisplayed();
 	}
 	
 	public String getMessageText() {
-		return elementUtils.getTextFromElement(messageText, 30);
+		return elementUtils.getTextFromElement(messageText, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
 		//return messageText.getText();
 	}
 	

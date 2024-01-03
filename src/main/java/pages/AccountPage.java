@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utils.CommonUtils;
 import utils.ElementUtils;
 
 public class AccountPage {
@@ -22,7 +23,7 @@ public class AccountPage {
 	
 	public boolean displayStatusOfEditYourAccountInformationOption() {
 		
-		return elementUtils.displayStatusOfElement(editYourAccountInformationOption, 30);
+		return elementUtils.displayStatusOfElement(editYourAccountInformationOption, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
 		//return editYourAccountInformationOption.isDisplayed();
 	}
 	

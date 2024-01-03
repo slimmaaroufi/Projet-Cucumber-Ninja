@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utils.CommonUtils;
 import utils.ElementUtils;
 
 public class RegisterPage {
@@ -68,87 +69,87 @@ public class RegisterPage {
 	private WebElement passwordWarning;
 	
 	public void enterFirstName(String firstNameText) {
-		elementUtils.typeTextIntoElement(firstNameField, firstNameText, 30);
+		elementUtils.typeTextIntoElement(firstNameField, firstNameText, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
 		//firstNameField.sendKeys(firstNameText);
 	}
 	
 	
 	public void enterLastName(String lastNameText) {
-		elementUtils.typeTextIntoElement(lastNameField, lastNameText, 30);
+		elementUtils.typeTextIntoElement(lastNameField, lastNameText, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
 		//lastNameField.sendKeys(lastNameText);
 	}
 	
 	public void enterEmailAddress(String emailText) {
-		elementUtils.typeTextIntoElement(emailField, emailText, 30);
+		elementUtils.typeTextIntoElement(emailField, emailText, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
 		//emailField.sendKeys(emailText);
 	}
 	
 	public void enterTelephoneNumber(String telephoneText) {
-		elementUtils.typeTextIntoElement(telephoneField, telephoneText, 30);
+		elementUtils.typeTextIntoElement(telephoneField, telephoneText, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
 		//telephoneField.sendKeys(telephoneText);
 	}
 	
 	public void enterPassword(String passwordText) {
-		elementUtils.typeTextIntoElement(passwordField, passwordText, 30);
+		elementUtils.typeTextIntoElement(passwordField, passwordText, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
 		//passwordField.sendKeys(passwordText);
 	}
 	
 	public void enterConfirmPassword(String passwordText) {
-		elementUtils.typeTextIntoElement(passwordConfirmField, passwordText, 30);
+		elementUtils.typeTextIntoElement(passwordConfirmField, passwordText, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
 		//passwordConfirmField.sendKeys(passwordText);
 	}
 	
 	public void selectPrivacyPolicy() {
-		elementUtils.clickOnElement(privacyPolicyOption, 30);
+		elementUtils.clickOnElement(privacyPolicyOption, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
 		//privacyPolicyOption.click();
 	}
 	
 	
 	public AccountSuccessPage clickOnContinueButton() {
-		elementUtils.clickOnElement(continueButton, 30);
+		elementUtils.clickOnElement(continueButton, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
 		//continueButton.click();
 		return new AccountSuccessPage(driver);
 	}
 	
 	
 	public void selectYesNewsletterOption() {
-		elementUtils.clickOnElement(YesToNewsLetterOption, 30);
+		elementUtils.clickOnElement(YesToNewsLetterOption, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
 		//YesToNewsLetterOption.click();
 	}
 	
 	
 	public String getWarningMessageText() {
 		
-		return elementUtils.getTextFromElement(warningMessage, 30);
+		return elementUtils.getTextFromElement(warningMessage, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
 		//YesToNewsLetterOption.click();
 		//return warningMessage.getText();
 	}
 	
 	
 	public String getFirstNameWarning() {
-		return elementUtils.getTextFromElement(firstNameWarning, 30);
+		return elementUtils.getTextFromElement(firstNameWarning, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
 		//return firstNameWarning.getText();
 	}
 	
 	
 	public String getLastNameWarning() {
-		return elementUtils.getTextFromElement(lastNameWarning, 30);
+		return elementUtils.getTextFromElement(lastNameWarning, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
 		//return lastNameWarning.getText();
 	}
 	
 	public String getEmailWarning() {
-		return elementUtils.getTextFromElement(emailWarning, 30);
+		return elementUtils.getTextFromElement(emailWarning, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
 		//return emailWarning.getText();
 	}
 	
 
 	public String getTelephoneWarning() {
-		return elementUtils.getTextFromElement(telephoneWarning, 30);
+		return elementUtils.getTextFromElement(telephoneWarning, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
 		//return telephoneWarning.getText();
 	}
 	
 	public String getPasswordWarning() {
-		return elementUtils.getTextFromElement(passwordWarning, 30);
+		return elementUtils.getTextFromElement(passwordWarning, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
 		//return passwordWarning.getText();
 	}
 	

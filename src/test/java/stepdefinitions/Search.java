@@ -45,7 +45,7 @@ private SearchResultsPage searchResultsPage;
 	  
 		//SearchResultsPage searchResultsPage =new SearchResultsPage(driver);
 		Assert.assertTrue(searchResultsPage.displayStatusOfValidProduct());
-		//Assert.fail();
+		Assert.fail();
 	}
 
 	@When("User enters invalid product {string} into Search box field")

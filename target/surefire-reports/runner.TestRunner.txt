@@ -1,0 +1,102 @@
+-------------------------------------------------------------------------------
+Test set: runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 28, Failures: 0, Errors: 28, Skipped: 0, Time elapsed: 3.465 s <<< FAILURE! - in runner.TestRunner
+Login with valid credentials #1(Login functionality)  Time elapsed: 0.207 s  <<< ERROR!
+java.lang.NoClassDefFoundError: org/openqa/selenium/HasDownloads
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.HasDownloads
+
+Login with valid credentials #1(Login functionality)  Time elapsed: 0.208 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+
+Login with valid credentials #2(Login functionality)  Time elapsed: 0.044 s  <<< ERROR!
+java.lang.NoClassDefFoundError: org/openqa/selenium/HasDownloads
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.HasDownloads
+
+Login with valid credentials #2(Login functionality)  Time elapsed: 0.045 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+
+Login with valid credentials #3(Login functionality)  Time elapsed: 0.041 s  <<< ERROR!
+java.lang.NoClassDefFoundError: org/openqa/selenium/HasDownloads
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.HasDownloads
+
+Login with valid credentials #3(Login functionality)  Time elapsed: 0.043 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+
+Login with invalid credentials(Login functionality)  Time elapsed: 0.024 s  <<< ERROR!
+java.lang.NoClassDefFoundError: org/openqa/selenium/HasDownloads
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.HasDownloads
+
+Login with invalid credentials(Login functionality)  Time elapsed: 0.024 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+
+Login with valid email and invalid password(Login functionality)  Time elapsed: 0.126 s  <<< ERROR!
+java.lang.NoClassDefFoundError: org/openqa/selenium/HasDownloads
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.HasDownloads
+
+Login with valid email and invalid password(Login functionality)  Time elapsed: 0.127 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+
+Login with invalid email and valid password(Login functionality)  Time elapsed: 0.041 s  <<< ERROR!
+java.lang.NoClassDefFoundError: org/openqa/selenium/HasDownloads
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.HasDownloads
+
+Login with invalid email and valid password(Login functionality)  Time elapsed: 0.041 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+
+Login without providing any credentails(Login functionality)  Time elapsed: 0.041 s  <<< ERROR!
+java.lang.NoClassDefFoundError: org/openqa/selenium/HasDownloads
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.HasDownloads
+
+Login without providing any credentails(Login functionality)  Time elapsed: 0.042 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+
+User creates an account only with mandatory fields(Registration functionality)  Time elapsed: 0.047 s  <<< ERROR!
+java.lang.NoClassDefFoundError: org/openqa/selenium/HasDownloads
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.HasDownloads
+
+User creates an account only with mandatory fields(Registration functionality)  Time elapsed: 0.048 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+
+User creates an account with all fields(Registration functionality)  Time elapsed: 0.039 s  <<< ERROR!
+java.lang.NoClassDefFoundError: org/openqa/selenium/HasDownloads
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.HasDownloads
+
+User creates an account with all fields(Registration functionality)  Time elapsed: 0.04 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+
+User creates a duplicate account(Registration functionality)  Time elapsed: 0.045 s  <<< ERROR!
+java.lang.NoClassDefFoundError: org/openqa/selenium/HasDownloads
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.HasDownloads
+
+User creates a duplicate account(Registration functionality)  Time elapsed: 0.045 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+
+User creates an account without filling any details(Registration functionality)  Time elapsed: 0.037 s  <<< ERROR!
+java.lang.NoClassDefFoundError: org/openqa/selenium/HasDownloads
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.HasDownloads
+
+User creates an account without filling any details(Registration functionality)  Time elapsed: 0.038 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+
+User searches for a valid product(Search functionality)  Time elapsed: 0.029 s  <<< ERROR!
+java.lang.NoClassDefFoundError: org/openqa/selenium/HasDownloads
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.HasDownloads
+
+User searches for a valid product(Search functionality)  Time elapsed: 0.031 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+
+User searches for an invalid product(Search functionality)  Time elapsed: 0.024 s  <<< ERROR!
+java.lang.NoClassDefFoundError: org/openqa/selenium/HasDownloads
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.HasDownloads
+
+User searches for an invalid product(Search functionality)  Time elapsed: 0.025 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+
+User searches without any product(Search functionality)  Time elapsed: 0.035 s  <<< ERROR!
+java.lang.NoClassDefFoundError: org/openqa/selenium/HasDownloads
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.HasDownloads
+
+User searches without any product(Search functionality)  Time elapsed: 0.035 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+

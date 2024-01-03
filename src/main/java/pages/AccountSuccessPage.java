@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utils.CommonUtils;
 import utils.ElementUtils;
 
 public class AccountSuccessPage {
@@ -23,7 +24,7 @@ public class AccountSuccessPage {
 	
 	public String getPageHeading() {
 		
-		return elementUtils.getTextFromElement(pageHeading, 30);
+		return elementUtils.getTextFromElement(pageHeading, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
 		//return pageHeading.getText();
 	}
 	
