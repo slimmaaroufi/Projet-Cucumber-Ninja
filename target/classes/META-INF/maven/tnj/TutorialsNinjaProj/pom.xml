@@ -27,7 +27,7 @@
 		<csv.version>1.1</csv.version>
 		<screenshot.version>1.5.4</screenshot.version>
 		<jasypt.version>1.9.3</jasypt.version>
-		<webdrivermanager.version>5.5.3</webdrivermanager.version>
+		<webdrivermanager.version>5.6.2</webdrivermanager.version>
 		<seleniumclient.version>4.13.0</seleniumclient.version>
 		<apachepoi.version>3.13</apachepoi.version>
 		<json.version>1.1.1</json.version>
@@ -40,11 +40,7 @@
 			<artifactId>poi-ooxml</artifactId>
 			<version>${apachepoi.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-http-jdk-client</artifactId>
-			<version>${seleniumclient.version}</version>
-		</dependency>
+		
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-api</artifactId>
