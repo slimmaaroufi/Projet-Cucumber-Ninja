@@ -24,6 +24,12 @@ public class SearchResultsPage {
 	@FindBy (xpath="//input[@id='button-search']/following-sibling::p")
 	private WebElement messageText;
 	
+	//boutton ajouter une commande
+	@FindBy (xpath="//button[contains(@onclick,'cart.add')]")
+	private WebElement addCart;
+	
+	//span[text()='Add to Cart']
+	
 	public boolean displayStatusOfValidProduct() {
 		return elementUtils.displayStatusOfElement(validHPProduct, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
 		//return validHPProduct.isDisplayed();
@@ -32,6 +38,12 @@ public class SearchResultsPage {
 	public String getMessageText() {
 		return elementUtils.getTextFromElement(messageText, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
 		//return messageText.getText();
+	}
+	
+	//button ADD CART Handing Order
+	public ProductPage clickButtonAddCart() {
+		elementUtils.clickOnElement(addCart, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
+		return new ProductPage(driver);
 	}
 	
 	

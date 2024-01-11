@@ -31,6 +31,15 @@ public class LoginPage {
 	@FindBy(xpath="//div[contains(@class,'alert-dismissible')]")
 	private WebElement warningMessage;
 	
+	//Forgotten Password
+	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")
+	private WebElement warningMessageForgottenPassword;
+	
+	@FindBy(xpath="//a[text()='Forgotten Password']")
+	private WebElement forgottenPassword;
+	
+	
+	
 	public void enterEmailAddress(String emailText) {
 		elementUtils.typeTextIntoElement(emailFiled, emailText, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
 		//emailFiled.sendKeys(emailText);
@@ -55,4 +64,17 @@ public class LoginPage {
 		//return warningMessage.getText();
 		
 	}
+	
+	// action Forgotten Password
+	public ForgotPasswordPage clickforgottenPassword() {
+		elementUtils.clickOnElement(forgottenPassword, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
+		return new ForgotPasswordPage(driver);
+	}
+	
+	// message Forgotten Password
+	public String getwarningMessageForgottenPassword() {
+		return elementUtils.getTextFromElement(warningMessageForgottenPassword, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
+		
+	}
+	
 }

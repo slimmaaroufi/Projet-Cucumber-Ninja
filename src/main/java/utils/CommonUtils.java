@@ -1,5 +1,6 @@
 package utils;
 
+
 import java.util.Date;
 
 	public class CommonUtils {
@@ -13,5 +14,13 @@ import java.util.Date;
 		
 		Date date =new Date();
 		return "amotoori"+date.toString().replace(" ", "_").replace(":", "_")+"@gmail.com";
+		//return "slimtest1_"+date.toString().replace(" ", "_").replace(":", "_")+"@gmail.com";
+		 
 	}
+		
+
+		
+		
+	
+		
 }

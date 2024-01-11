@@ -92,6 +92,7 @@ public class Register {
 	public void user_clicks_on_continue_button() {
 		accountSuccessPage =registerPage.clickOnContinueButton();
 		//driver.findElement(By.xpath("//input[@value='Continue']")).click();
+		
 	}
 
 	@Then("User account should get created successfully")

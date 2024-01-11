@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: runner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 121.235 s - in runner.TestRunner
+Tests run: 16, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 143.189 s <<< FAILURE! - in runner.TestRunner
+Order with valid scenario(Order functionality)  Time elapsed: 6.26 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.click()" because "webElement" is null
+

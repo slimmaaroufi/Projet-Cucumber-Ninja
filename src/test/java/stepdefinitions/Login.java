@@ -69,10 +69,9 @@ public class Login {
 		//accountPage=new AccountPage(driver);
 		
 		Assert.assertTrue(accountPage.displayStatusOfEditYourAccountInformationOption());
-		
-		
+	
 	}
-
+	
 	@When("User enters invalid email address into email field")
 	public void user_enters_invalid_email_address_into_email_field() {
 		
@@ -112,6 +111,12 @@ public class Login {
 		loginPage.enterPassword("");
 		//driver.findElement(By.id("input-password")).sendKeys("");
 	}
+	
+	@When("User enters valid email address {string} into email field in the login page")
+	public void user_enters_valid_email_address_into_email_field_in_the_login_page(String emailText) {
+		loginPage.enterEmailAddress(emailText);
+	}
+	
 	
 	
 }
