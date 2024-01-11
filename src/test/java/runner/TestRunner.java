@@ -18,12 +18,12 @@ import io.cucumber.junit.CucumberOptions;
 				"json:target/cucumber-report.json",
 				"junit:target/cucumber-report.xml"
 				}, //les rapports
-		//tags = ("@Register or @Login or @Search or @ForgotPassword"),
+		//tags = ("@orders"),
 		//order = "@Login.feature",
 		publish=true,
 		glue= {"stepdefinitions","hooks"},
 		//{"src/test/java/com/e2etest/automation/step_definitions"},//nesta3mlouha ki yebdew mch meme niveau m3a class RUN
-		monochrome = true, // ynathem elconsole
+		//monochrome = true, // ynathem elconsole
 		snippets = CAMELCASE)
 
 public class TestRunner {

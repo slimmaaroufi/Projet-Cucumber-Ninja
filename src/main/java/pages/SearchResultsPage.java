@@ -42,6 +42,7 @@ public class SearchResultsPage {
 	
 	//button ADD CART Handing Order
 	public ProductPage clickButtonAddCart() {
+		//addCart.click();
 		elementUtils.clickOnElement(addCart, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
 		return new ProductPage(driver);
 	}
