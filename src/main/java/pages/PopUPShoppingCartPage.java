@@ -34,6 +34,14 @@ public class PopUPShoppingCartPage {
 	private WebElement viewCartButton;
 	
 	
+	@FindBy(xpath="//tr/td[@class=\"text-right\"][text()=\"$122.00\"]")
+	private WebElement Totale;
+	
+	public String getTotale() {
+		return elementUtils.getTextFromElement(Totale, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
+	}
+	
+	
 	
 	
 	public CheckOutPage clickCheckOutButton() {

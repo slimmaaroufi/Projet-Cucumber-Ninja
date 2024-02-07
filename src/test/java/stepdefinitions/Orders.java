@@ -12,8 +12,11 @@ import io.cucumber.java.en.When;
 import pages.AccountPage;
 import pages.HomePage;
 import pages.LoginPage;
+import pages.PopUPShoppingCartPage;
 import pages.ProductPage;
 import pages.SearchResultsPage;
+import utils.CommonUtils;
+import utils.ElementUtils;
 
 public class Orders {
 
@@ -23,7 +26,8 @@ public class Orders {
 	private HomePage homePage;
 	private SearchResultsPage searchResultsPage;
 	private ProductPage productPage;
-
+	private ElementUtils elementUtils;
+	private PopUPShoppingCartPage popUPShoppingCartPage;
 	
 	
 	
@@ -45,26 +49,32 @@ public class Orders {
 
 	@When("I add any product to bag and checkout")
 	public void i_add_any_product_to_bag_and_checkout() {
+		elementUtils = new ElementUtils(driver);
+		elementUtils.ScrollElement();
 		
 		searchResultsPage = new SearchResultsPage(driver);
 		productPage =searchResultsPage.clickButtonAddCart();
+		
 	}
 
 	@When("I place an order")
 	public void i_place_an_order() {
 		
 		productPage.clickItemButton();
-	}
-
-	@Then("I should see that the order is placed successfully")
-	public void i_should_see_that_the_order_is_placed_successfully() {
-	  
-		//Assert.assertEquals("Success: You have added HP LP3065 to your shopping cart!", productPage.getMessageTextProductSuccess());
-		Assert.assertTrue(productPage.displayTitleProduct().contains("HP LP3065"));
 		
 	}
 
-	
+	@Then("I should see that the order is placed successfully")
+	public void i_should_see_that_the_order_is_placed_successfully() throws InterruptedException {
+		
+		
+	      
+		Assert.assertEquals("Success: You have added HP LP3065 to your shopping cart!", productPage.getMessageTextProductSuccess());
+		Assert.assertTrue(popUPShoppingCartPage.getTotale().contains("$122.00"));
+		//System.out.println();
+		//Thread.sleep(3000);
+	}
+
 	
 	
 	

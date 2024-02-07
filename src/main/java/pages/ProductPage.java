@@ -26,10 +26,10 @@ public class ProductPage {
 	@FindBy(xpath="//h1[text()='HP LP3065']")
 	private WebElement titleProduct;
 	
-	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")
+    @FindBy(xpath="//div[@class=\"alert alert-success alert-dismissible\"]")
 	private WebElement warningSuccessMessageProduct;
 	
-	@FindBy(xpath="//div[@id='cart']")
+	@FindBy(id="button-cart")
 	private WebElement ItemButtonProduct;
 	
 	
@@ -47,6 +47,7 @@ public class ProductPage {
 	}
 	
 	//ajouter page popupitem apres revenir  a faire liraison entre eurx
+	
 	public PopUPShoppingCartPage clickItemButton() {
 		elementUtils.clickOnElement(ItemButtonProduct, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
 		return new PopUPShoppingCartPage(driver);

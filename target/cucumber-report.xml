@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="174.126" tests="16" skipped="0" failures="0" errors="0">
-<testcase classname="Forget Password functionality" name="Reset password on forgetting it" time="16.667">
+<testsuite name="Cucumber" time="204.933" tests="16" skipped="0" failures="1" errors="0">
+<testcase classname="Forget Password functionality" name="Reset password on forgetting it" time="17.499">
 <system-out><![CDATA[
 Given User opens the Application............................................passed
 When User clicks on MyAccount...............................................passed
@@ -11,7 +11,7 @@ And User clicks on Continue.................................................pass
 Then Proper confirmation message should be displayed........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login functionality" name="Login with valid credentials - Example #1.1" time="11.541">
+<testcase classname="Login functionality" name="Login with valid credentials - Example #1.1" time="12.469">
 <system-out><![CDATA[
 Given User navigates to login page..........................................passed
 When User enters valid email address slimtest9@gmail.com into email field...passed
@@ -20,7 +20,7 @@ And User clicks on Login button.............................................pass
 Then User should get successfully logged in.................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login functionality" name="Login with valid credentials - Example #1.2" time="11.214">
+<testcase classname="Login functionality" name="Login with valid credentials - Example #1.2" time="13.292">
 <system-out><![CDATA[
 Given User navigates to login page..........................................passed
 When User enters valid email address slimtest1@gmail.com into email field...passed
@@ -29,7 +29,7 @@ And User clicks on Login button.............................................pass
 Then User should get successfully logged in.................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login functionality" name="Login with valid credentials - Example #1.3" time="9.217">
+<testcase classname="Login functionality" name="Login with valid credentials - Example #1.3" time="12.559">
 <system-out><![CDATA[
 Given User navigates to login page..........................................passed
 When User enters valid email address slimtest2@gmail.com into email field...passed
@@ -38,7 +38,7 @@ And User clicks on Login button.............................................pass
 Then User should get successfully logged in.................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login functionality" name="Login with invalid credentials" time="9.514">
+<testcase classname="Login functionality" name="Login with invalid credentials" time="12.018">
 <system-out><![CDATA[
 Given User navigates to login page..........................................passed
 When User enters invalid email address into email field.....................passed
@@ -47,7 +47,7 @@ And User clicks on Login button.............................................pass
 Then User should get a proper warning message about credentials mismatch....passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login functionality" name="Login with valid email and invalid password" time="8.13">
+<testcase classname="Login functionality" name="Login with valid email and invalid password" time="11.718">
 <system-out><![CDATA[
 Given User navigates to login page..........................................passed
 When User enters valid email address "slimtest1@gmail.com" into email field in the login page.passed
@@ -56,7 +56,7 @@ And User clicks on Login button.............................................pass
 Then User should get a proper warning message about credentials mismatch....passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login functionality" name="Login with invalid email and valid password" time="10.001">
+<testcase classname="Login functionality" name="Login with invalid email and valid password" time="11.505">
 <system-out><![CDATA[
 Given User navigates to login page..........................................passed
 When User enters invalid email address into email field.....................passed
@@ -65,7 +65,7 @@ And User clicks on Login button.............................................pass
 Then User should get a proper warning message about credentials mismatch....passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login functionality" name="Login without providing any credentails" time="10.455">
+<testcase classname="Login functionality" name="Login without providing any credentails" time="11.294">
 <system-out><![CDATA[
 Given User navigates to login page..........................................passed
 When User dont enter email address into email field.........................passed
@@ -74,15 +74,25 @@ And User clicks on Login button.............................................pass
 Then User should get a proper warning message about credentials mismatch....passed
 ]]></system-out>
 </testcase>
-<testcase classname="End to End scenarios for placing orders" name="Verify whether the User is able to place order" time="14.487">
+<testcase classname="End to End scenarios for placing orders" name="Verify whether the User is able to place order" time="17.046">
+<failure type="org.junit.ComparisonFailure" message="expected:&lt;... your shopping cart![]&gt; but was:&lt;... your shopping cart![
+×]&gt;">
+<![CDATA[org.junit.ComparisonFailure: expected:<... your shopping cart![]> but was:<... your shopping cart![
+×]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepdefinitions.Orders.i_should_see_that_the_order_is_placed_successfully(Orders.java:72)
+	at ✽.I should see that the order is placed successfully(file:///C:/Users/maaro/eclipse-workspace/TutorialsNinjaProj/src/test/resources/features/Order.feature:8)
+]]>
+</failure>
 <system-out><![CDATA[
 Given I login to the application............................................passed
 When I add any product to bag and checkout..................................passed
 And I place an order........................................................passed
-Then I should see that the order is placed successfully.....................passed
+Then I should see that the order is placed successfully.....................failed
 ]]></system-out>
 </testcase>
-<testcase classname="Registration functionality" name="User creates an account only with mandatory fields" time="12.943">
+<testcase classname="Registration functionality" name="User creates an account only with mandatory fields" time="15.019">
 <system-out><![CDATA[
 Given User navigates to Register Account page...............................passed
 When User enters the details into below fields..............................passed
@@ -91,7 +101,7 @@ And User clicks on Continue button..........................................pass
 Then User account should get created successfully...........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Registration functionality" name="User creates an account with all fields" time="14.159">
+<testcase classname="Registration functionality" name="User creates an account with all fields" time="14.552">
 <system-out><![CDATA[
 Given User navigates to Register Account page...............................passed
 When User enters the details into below fields..............................passed
@@ -101,7 +111,7 @@ And User clicks on Continue button..........................................pass
 Then User account should get created successfully...........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Registration functionality" name="User creates a duplicate account" time="13.175">
+<testcase classname="Registration functionality" name="User creates a duplicate account" time="14.584">
 <system-out><![CDATA[
 Given User navigates to Register Account page...............................passed
 When User enters the details into below fields with duplicate email.........passed
@@ -111,7 +121,7 @@ And User clicks on Continue button..........................................pass
 Then User should get a proper warning about duplicate email.................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Registration functionality" name="User creates an account without filling any details" time="10.651">
+<testcase classname="Registration functionality" name="User creates an account without filling any details" time="12.457">
 <system-out><![CDATA[
 Given User navigates to Register Account page...............................passed
 When User dont enter any details into fields................................passed
@@ -119,7 +129,7 @@ And User clicks on Continue button..........................................pass
 Then User should get proper warning messages for every mandatory field......passed
 ]]></system-out>
 </testcase>
-<testcase classname="Search functionality" name="User searches for a valid product" time="6.883">
+<testcase classname="Search functionality" name="User searches for a valid product" time="9.558">
 <system-out><![CDATA[
 Given User opens the Application............................................passed
 When User enters valid product "HP" into Search box field...................passed
@@ -127,7 +137,7 @@ And User clicks on Search button............................................pass
 Then User should get valid product displayed in search results..............passed
 ]]></system-out>
 </testcase>
-<testcase classname="Search functionality" name="User searches for an invalid product" time="7.602">
+<testcase classname="Search functionality" name="User searches for an invalid product" time="9.317">
 <system-out><![CDATA[
 Given User opens the Application............................................passed
 When User enters invalid product "Honda" into Search box field..............passed
@@ -135,7 +145,7 @@ And User clicks on Search button............................................pass
 Then User should get a message about no product matching....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Search functionality" name="User searches without any product" time="6.65">
+<testcase classname="Search functionality" name="User searches without any product" time="9.044">
 <system-out><![CDATA[
 Given User opens the Application............................................passed
 When User dont enter any product name into Search box field.................passed

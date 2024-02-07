@@ -6,3 +6,4 @@ Feature: End to End scenarios for placing orders
     When I add any product to bag and checkout
     And I place an order
     Then I should see that the order is placed successfully
+		

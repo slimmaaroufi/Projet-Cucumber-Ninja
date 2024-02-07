@@ -156,6 +156,15 @@ public class ElementUtils {
 	}
 	
 	
+	// scrolling methode
+	
+	     public void ScrollElement () {
+		
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+        jsExecutor.executeScript("window.scrollBy(0, -700)");
+	} 
+		
+	
 }
 
 
